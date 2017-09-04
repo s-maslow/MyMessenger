@@ -4,9 +4,11 @@ $APPLICATION->SetTitle("redBird");
 ?>
 <h2>Hello, it's a RedBird</h2>
 
+<?   $APPLICATION->IncludeComponent(
+    "messenger:autorize",
+    "",
+    Array()
+);
+?>
 
-
-
-
-
-</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
